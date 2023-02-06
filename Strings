@@ -1,0 +1,33 @@
+#include<stdio.h>
+#include<string.h>
+void main()
+{
+char p[20];
+char *s="string";
+int length=strlen(s);
+int i;
+for(i=0;i<length;i++)
+p[i]=s[length-i];
+print("%s",p);
+
+----Output----
+
+//prints nothing
+
+
+char c[]="GATE2011";
+char *p=c;
+print("%s",p+p[3]-p[1]);
+----Output----
+2011
+
+void foo(char *a)
+{
+if(*a && *a!=' ')
+{
+foo(a+1);
+putchar(*a);
+}
+}
+----Output----
+DCBA
