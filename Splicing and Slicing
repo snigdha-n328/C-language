@@ -1,0 +1,25 @@
+***SPLICING***
+#include<stdio.h>
+int main()
+{
+printf("%s\n","You have to dream before your dreams can come true.\
+--A.P.J. Abdul Kalam");
+printf("%s","You have to dream before your dreams can come true. "
+"--A.P.J. Abdul Kalam");
+return 0;
+}
+
+---OUTPUT---
+You have to dream before your dreams can come true.--A.P.J. Abdul Kalam
+You have to dream before your dreams can come true. --A.P.J. Abdul Kalam
+
+
+***SLICING***
+char *ptr= "Hello World";
+printf("%s",ptr);   //Hello World
+printf("%.5s",ptr);   //Hello
+printf("%6.5s",ptr);  // Hello
+
+//%.ns is used to print just a part of string where n is the no of characters to be displayed on the screen
+//%m.ns n->no of characters to be displayed on the screen
+        m->size of field within which the string is displayed
