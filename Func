@@ -4,3 +4,12 @@ int main()
     printf("Hi",printf("Hello",printf("Bye")));
     return 0;
 }
+//Output:ByeHelloHi
+
+#include<stdio.h>
+int main()
+{
+    printf("%d",printf("%d",printf("Bye")));
+    return 0;
+}
+//Output:Bye31
